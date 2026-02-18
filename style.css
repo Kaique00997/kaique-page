@@ -1,0 +1,333 @@
+/* Aumentar fonte base do documento */
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('./font/Minecraftia.ttf') format('truetype'); /* Adicionei o ./ para garantir */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Muda cor dos links*/
+
+
+a {/*antes de clicar*/
+    color: #6f86bf;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:visited {/*após ser visitado */
+    color: #346856;
+}
+
+a:hover {/* quando você passa o mouse*/
+    color: #e0f8d0;
+    text-decoration: underline;
+}
+
+/*muda tamanho da fonte*/
+body {
+    font-size: 160%; /* Aumenta 10% da fonte padrão */
+}
+
+/* Suaviza a rolagem para uma experiência mais fluida */
+html {
+    scroll-behavior: smooth;
+}
+
+/*barra de navegação fixa no topo da página */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e0f8d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.boas_vindas {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d0daf7;
+}
+
+
+body {
+    margin: 0;
+    padding-top: 80px;
+    background-color: #080b21;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    margin-bottom: 0px; /* controla o espaço abaixo */
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 450px;
+    background-image: url("Imagnes/banner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* PERFIL (foto + texto lado a lado) */
+
+
+
+.perfil {
+    gap: 20px;
+    position: absolute;
+    bottom: 100px;   /* controla o quanto sobrepõe */
+    left: 2%;     /* controla o quanto da esquerda */
+    /*transform: translateX(100%);*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* FOTO */
+
+.foto {
+    width: 256px; height: 256px;
+    object-fit: cover;
+    object-position: center 0%;
+    border-radius: 50%; /* deixa redonda */
+    border: 3px solid #e0f8d0;
+}
+
+/* TEXTOS */
+.info h1 {
+    margin: 0px;
+    font-size: 32px;
+}
+    
+.nick {
+    margin: 1px;
+    font-weight: normal;
+    color: #e0f8d0;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 20px 2%;
+    max-width: 100%;
+}
+
+.sobre h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* gamedev */
+.gamedev {
+    padding: 20px 2%;
+    max-width: 100%;
+}
+
+.gamedev h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.gamedev p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    bottom: 100px;
+}
+
+/* O PAI: Controla o posicionamento */
+.container-markat {
+    display: flex;          /* Agora sim o Flexbox funciona! */
+    flex-direction: row;    /* Lado a lado */
+    justify-content: center; /* Centraliza o grupo na tela */
+    flex-wrap: wrap;        /* Pula linha se a tela for pequena */
+    gap: 50%;              /* Espaço entre as imagens */
+    width: 100%;            /* Ocupa a largura total da seção */
+    margin: 20px auto;
+    margin-bottom: 200px;
+}
+
+/* AS FILHAS: Controlam o tamanho das imagens */
+.Imagnes-gird {
+    width: 300x;             /* Cada imagem ocupa 20% da largura do pai */
+    min-width: 200px;       /* Não deixa ficarem minúsculas no celular */
+    height: auto;           /* Mantém a proporção */
+    border-radius: 10px;
+    image-rendering: pixelated; /* Para sua Pixel Art ficar nítida! */
+}
+
+
+
+.pixelart {
+    /* Teste forçar em tudo que está dentro da seção */
+    font-family: 'Minecraftia', sans-serif !important; 
+    padding: 100px 2%; /* Reduzi o padding de 300px para você conseguir enxergar melhor */
+}
+
+
+/* Foto de perfil no estilo Pixel Art */
+
+
+.perfil-pixelart {
+    display: flex;
+    align-items: center;   /* alinha verticalmente */
+    gap: 40px;             /* espaço entre imagem e texto */
+    
+}
+
+.perfil-pixelart img {
+    width: 256px; height: 256px;
+    border: 3px solid #e0f8d0;
+    border-radius: 50%;
+}
+
+
+
+
+/* Grade Estilo Instagram */
+.grade-pixelart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas automáticas */
+    gap: 15px;
+    padding: 20px;
+}
+
+.foto-grid {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Força ficar quadrado */
+    object-fit: cover;   /* Corta a imagem sem distorcer */
+    cursor: pointer;
+    transition: 0.3s;
+    image-rendering: pixelated;
+    border-radius: 8px;
+}
+
+.foto-grid:hover {
+    transform: scale(1.02);
+    filter: brightness(0.8);
+}
+
+/* Estilo da Janela Modal */
+.modal {
+    display: none; /* Escondido */
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9); /* Fundo preto transparente */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Imagnes-gird {
+    /* 1. Define o tamanho (pode ajustar o 250px se quiser maior/menor) */
+    width: 100%; 
+    max-width: 300px; 
+
+    /* 2. O Pulo do Gato: Força ser um quadrado perfeito */
+    aspect-ratio: 1 / 1; 
+
+    /* 3. O Corte: Preenche o quadrado e corta o que sobrar das bordas */
+    object-fit: cover; 
+
+    /* 4. Onde o corte foca: centraliza o personagem/arte no meio do quadrado */
+    object-position: center; 
+
+    /* Bônus para suas Pixel Arts */
+    image-rendering: pixelated; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.Imagnes-gird:hover {
+    transform: scale(1.05); /* Dá aquele zoomzinho quando passa o mouse */
+}
+
+.modal-conteudo {
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+}
+
+#imgModal {
+    max-width: 100%;
+    max-height: 70vh;
+    border: 3px solid #6f86bf;
+    image-rendering: pixelated;
+}
+
+.fechar {
+    position: absolute;
+    top: 20px; right: 40px;
+    color: white; font-size: 50px; cursor: pointer;
+}
+
+
+
+.rodape {
+    background-color: #0d1117; /* Um tom mais escuro que o body para destacar */
+    padding: 40px 20px;
+    border-top: 3px solid #6f86bf; /* Linha que separa o conteúdo do rodapé */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.numero-pixel {
+    font-family: 'nes', sans-serif; /* Usando a fonte que você baixou */
+    color: #e0f8d0;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.nes-text {
+    font-family: 'nes', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #8b949e;
+    margin-top: 20px;
+}

@@ -1,22 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Kaique Dias</title>
+    <meta charset="UTF-8">
+    <title>Kaique Dias - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
+
 <body>
-  <h1>Olá, eu sou Kaique</h1>
-  <p>Estudante de Engenharia da Computação na UFPA</p>
-  <p>Gamedev</p>
-  <p>pixelartista</p>
 
-  <h2>Meus Projetos</h2>
+    <nav class="navbar">
+    <div class="boas_vindas"><img src="Imagnes/Pixelarts/Sapodoido_icon.png" alt="sapodoido"></div>
 
-  <ul>
-    <li>Marcat<li>
-    <li>Zelda Souls<li>
-    <li>Ono</li>
-    <li>Sprite Stack<li>
-    <li>Bloomind</li>
-  </ul>
+    <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#gamedev">Game Dev</a></li>
+        <li><a href="#pixelart">Pixelart</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    </nav>
+
+
+    <section id="inicio" class="hero">
+        <div class="banner"></div>
+        <div class="container-perfil"> <div class="perfil">
+                <img src="Imagnes/foto.png" alt="Kaique Dias" class="foto">
+                <div class="info">
+                    <h1>Kaique Dias</h1>
+                    <h2 class="nick">CJsorrindo</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre mim</h2>
+            <p>Sou estudante de Engenharia da Computação na UFPA com foco em desenvolvimento
+            de jogos e sistemas interativos. Tenho experiência com GameMaker, 
+            lógica de programação, construção de mecânicas complexas e game design.
+            Além de minha paixão por jogos, também sou entusiasta de pixel art e design gráfico,
+            o que me permite criar visuais únicos para meus projetos.</p>
+        </div>
+    </section>
+
+    <section id="gamedev" class="gamedev">
+        <div class="container">
+            <h2>Game Dev</h2>
+            <p> 
+                Com minha experiência em GameMaker, onde desenvolvi diversos projetos envolvendo mecânicas complexas e design de jogos, 
+                estou sempre buscando aprimorar minhas habilidades e criar experiências únicas e bem estruturadas.
+            </p>
+            <p>
+                Cada projeto contribuiu para o desenvolvimento das minhas habilidades como game developer, fortalecendo tanto meu pensamento 
+                técnico quanto minha criatividade. Tenho um imenso carinho por cada um deles, pois representam etapas importantes da minha evolução na área.
+            </p>
+            <p>
+                Meus projetos incluem:
+            </p>
+
+            <h1>Markat</h1>
+            <p>
+                Markat foi meu primeiro projeto e também um dos mais ambiciosos. Nele, o jogador assume o controle de um personagem que precisa evitar inimigos 
+                utilizando mecânicas de stealth. Os inimigos possuem comportamento de perseguição e reagem à presença do jogador, criando situações de tensão 
+                constante. Para sobreviver, é necessário utilizar o ambiente de forma estratégica, escondendo-se, desviando rotas ou enganando os inimigos para escapar.
+            </p>
+
+            <img src="Imagnes/Projetos/Markat.png" alt="Markat" class="Imagnes-projeto">
+            <img src="Imagnes/Projetos/Markat2.png" alt="Markat2" class="Imagnes-projeto">
+            
+
+
+            <h1>Zelda Souls</h1>
+            <p>
+                Meu projeto favorito e o mais completo dentre os que já desenvolvi, Zelda Souls não é apenas um projeto que me propuz a fazer como desafio, mas uma realização pessoal,
+                ele combina o Jogo Zelda II (um dos piores jogos que ja joguei) com a serie souls, ele mantei o traço e o desining grafico do Zelda II, mais adiciona as mecânicas de combate
+                da serie souls, o resultado é um jogo que tem uma identidade visual nostalgica do NES, mas com uma jogabilidade moderna e desafiadora, exigindo habilidade, estratégia e 
+                paciência para superar cada desafio.
+            </p>
+
+            <img src="Imagnes/Projetos/Zelda_Souls.png" alt="Zelda Souls" class="Imagnes-projeto">
+            <img src="Imagnes/Projetos/Zelda_Souls2.png" alt="Zelda Souls2" class="Imagnes-projeto">
+            <img src="Imagnes/Projetos/Zelda_Souls3.png" alt="Zelda Souls3" class="Imagnes-projeto">
+            
+
+
+            <h1>ONO</h1>
+            <p>
+                Esse projeto nasceu de uma piada interna entre amigos, quando jogávamos uma versão alternativa do Uno chamada ONO. A ideia surgiu como uma brincadeira, mas acabou se 
+                transformando no desafio de criar uma versão digital completa do jogo. Foi um dos projetos mais diferentes que já desenvolvi. Não imaginava que um jogo de cartas 
+                pudesse envolver tanta complexidade, desde a lógica das regras e validação das jogadas até o gerenciamento de estados, turnos e interações entre jogadores.
+                Esse projeto ampliou muito minha percepção sobre design de sistemas e mostrou como até mecânicas aparentemente simples podem exigir uma implementação bem estruturada.
+            </p>
+
+            <img src="Imagnes/Projetos/Ono.png" alt="ONO" class="Imagnes-projeto">
+            <img src="Imagnes/Projetos/Ono2.png" alt="ONO2" class="Imagnes-projeto">
+
+
+
+            <h1>Bloomind</h1>
+            <p> 
+                Definitivamente o projeto mais intenso que já desenvolvi, Bloomind foi criado para a disciplina de Projetos I da minha faculdade. O objetivo era desenvolver um jogo 
+                que ensinasse botânica de forma prática e interativa. O resultado foi um jogo com proposta educativa, no qual o jogador assume o papel de um fazendeiro responsável
+                por cuidar de diferentes plantas, aprendendo sobre suas necessidades, características e cuidados específicos. Além disso, o jogo contava com um sistema dinâmico de
+                nutrientes, onde os elementos presentes no solo se distribuíam de forma automática entre os tiles, influenciando diretamente o desenvolvimento das plantas.
+                Infelizmente, o projeto não foi finalizado devido ao tempo limitado e à alta pressão imposta. Ainda assim, tenho um grande carinho por ele, pois foi uma experiência 
+                que me ensinou muito sobre design de jogos educativos, organização de sistemas e gerenciamento de projetos sob prazo.
+            </p>
+
+            <img src="Imagnes/Projetos/Bloomind.png" alt="Bloomind" class="Imagnes-projeto">
+        </div>
+    </section>
+
+    <script>
+    function abrirModal(elemento, texto) {
+        const modal = document.getElementById("janelaModal");
+        const imgModal = document.getElementById("imgModal");
+        const legenda = document.getElementById("legendaModal");
+
+        modal.style.display = "flex"; // Mostra a janela
+        imgModal.src = elemento.src;  // Pega a imagem que você clicou
+        legenda.innerHTML = texto;    // Coloca o texto que você definiu
+    }
+
+    function fecharModal() {
+        document.getElementById("janelaModal").style.display = "none";
+    }
+    </script>
+
+    <section id="pixelart" class="pixelart">
+        <div id="janelaModal" class="modal" onclick="fecharModal()">
+            <span class="fechar">&times;</span>
+            <div class="modal-conteudo">
+                <img id="imgModal" src="">
+                <p id="legendaModal"></p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2>PIXEL ART</h2>
+            <div class="perfil-pixelart">      
+                <img src="Imagnes/Pixelarts/perfil CJ 2023.png" alt="CJ Sorrindo" class="perfil-pixelart">
+                <div class="texto">
+                    <h3>Olá, tambem sou CJ sorrindo!</h3>
+                </div>
+            </div>
+            <p>
+                O Pixel Art é uma das partes mais importantes da minha trajetória. Foi através dele que descobri minha paixão por GameDev, e desde 2021 venho aprimorando meu estilo
+                e expandindo meu repertório artístico. Tenho um estilo versátil, já tendo trabalhado com personagens, ambientes para jogos, ilustrações e artes digitais, além de 
+                projetos voltados para <a href="https://www.instagram.com/reel/DH8r81LxFm-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">divulgação</a> e até 
+                um clipe musical. Se quiser conhecer mais da minha jornada e evolução, grande parte do meu trabalho está no Instagram 
+                <a href="https://www.instagram.com/cj_sorrindo" target="_blank">@CJsorrindo</a>, ou algun dos meus itens na itch.io <a href="https://cj-sorrindo.itch.io/" target="_blank">CJ Sorrindo</a>.
+            </p>
+        </div>
+
+        <div class="grade-pixelart">
+            <img src="Imagnes/Pixelarts/Left4dead.png" alt="Pixel Art 1" class="Imagnes-gird" onclick="abrirModal(this, 'Pixel art dos personagens do left 4 dead, sabe-se lá o por que de eu não ter postado ela.')">
+            <img src="Imagnes/Pixelarts/metal sug tumb.png" alt="Pixel Art 2" class="Imagnes-gird" onclick="abrirModal(this, 'Uma arte no estilo do Metal Slug, subistituindo os personagens por alguns amigos meus. um dos jogos mais bonitos que ja vi, e que me inspirou muito a criar pixel art.')">
+            <img src="Imagnes/Pixelarts/Teste 1.png" alt="Pixel Art 3" class="Imagnes-gird" onclick="abrirModal(this, 'O primeiro teste de um cenario que estava desenvolvendo com amigos, no final esse desning foi descartado, mas você pode encontrear os cenarios que entraram no lugar dele no meu instagram.')">
+            <img src="Imagnes/Pixelarts/tileset.png" alt="Pixel Art 4" class="Imagnes-gird" onclick="abrirModal(this, 'tileset no estilo GBC que fiz para um projeto que está a venda no meu meu itch.io.')">
+            <img src="Imagnes/Pixelarts/Danilo.png " alt="Pixel Art 5" class="Imagnes-gird" onclick="abrirModal(this, 'Danilo, um dos personagens originais que criei para um projeto inacabado.')">
+            <img src="Imagnes/Pixelarts/Sophia.png" alt="Pixel Art 6" class="Imagnes-gird" onclick="abrirModal(this, 'Sofia, um dos personagens originais que criei para um projeto inacabado.')">
+            <img src="Imagnes/Pixelarts/Natlhalia.png" alt="Pixel Art 7" class="Imagnes-gird" onclick="abrirModal(this, 'Nathalia, um dos personagens originais que criei para um projeto inacabado.')">
+            <img src="Imagnes/Pixelarts/Miguel.png" alt="Pixel Art 8" class="Imagnes-gird" onclick="abrirModal(this, 'Miguel, um dos personagens originais que criei para um projeto inacabado.')">
+            <img src="Imagnes/Pixelarts/Portatil.png" alt="Pixel Art 9" class="Imagnes-gird" onclick="abrirModal(this, 'portatil do personagem presente no meu pack de pixel art, que está no meu itch.io.')">
+            <img src="Imagnes/Pixelarts/Sapodoido.png" alt="Pixel Art 10" class="Imagnes-gird" onclick="abrirModal(this, 'Personagem que reaproveiro para quase todos meus projetos, ele é um sapo, e é o personagem mais versátil que já criei.')">
+            <img src="Imagnes/Pixelarts/Maxpayne_thumb.png" alt="Pixel Art 11" class="Imagnes-gird" onclick="abrirModal(this, 'Arte com alguns amigos.')">
+        </div>
+
+        <p>
+                Como você pode ver, cada um de meu trabalho destoa um dos outros, e isso é algo que me orgulho muito. Gosto de experimentar diferentes estilos e temáticas, 
+                o que me permite explorar minha criatividade e adaptar meu trabalho para diversos tipos de projetos.
+            </p>
+
+    </section>
+
 </body>
+
+
+<footer class="rodape">
+    <div class="footer-conteudo">
+        <div class="link-rodape">
+            <a href="https://www.instagram.com/cjsorrindo" target="_blank" class="link-icone">
+                <img src="Imagnes/instaicon.png" alt="Instagram" class="pixel-icon">
+                <span>@CJsorrindo</span>
+            </a>
+
+            <a href="https://cj-sorrindo.itch.io" target="_blank" class="link-icone">
+                <img src="Imagnes/ichioicon.png" alt="Itch.io" class="pixel-icon">
+                <span>Itch.io</span>
+            </a>
+            <p>Kaiquediasferreira@gmail.com</p>
+        </div>
+        
+        <p class="copyright">© 2024 Kaique Dias - esse site custou 3 anos da saúde das minhas costas</p>
+    </div>
+</footer>
+
 </html>
