@@ -1,7 +1,7 @@
 /* Aumentar fonte base do documento */
 @font-face {
     font-family: 'Minecraftia';
-    src: url('./font/Minecraftia.ttf') format('truetype'); /* Adicionei o ./ para garantir */
+    src: url('/font/Minecraftia.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
